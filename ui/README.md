@@ -2,6 +2,17 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+node installed
+
+Start json server
+cd api
+npm run json-server
+
+start frontend
+cd ui
+npm install
+npm start
+
 ## Available Scripts
 
 In the project directory, you can run:
