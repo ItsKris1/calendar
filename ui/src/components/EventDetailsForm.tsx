@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Form, FormGroup, Label, Input, Button } from "reactstrap";
-import { Event } from "./types/event";
+import { Event } from "../types/event";
 
 type Props = {
   event: Event;

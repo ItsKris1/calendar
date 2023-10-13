@@ -31,7 +31,7 @@ export const fetchEvents = createAsyncThunk("events/fetchEvents", async () => {
 
 export const searchEventById = createAsyncThunk(
   "events/searchEventById",
-  async (id: number) => {
+  async (id: string) => {
     try {
       const response = await fetch(`http://localhost:8999/events/${id}`);
       if (response.ok) {
