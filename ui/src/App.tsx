@@ -141,7 +141,7 @@ function App() {
 
       <Row className="mt-4">
         <Col sm="auto">
-          <p>
+          <p style={{ fontSize: "15px", letterSpacing: 0.75 }}>
             <b>TYPES</b>
           </p>
           <ListGroup flush>
@@ -221,10 +221,7 @@ function App() {
       </Row>
 
       <Modal isOpen={createModal} toggle={toggleCreateModal} centered>
-        <ModalHeader
-          className="pl-4  border-bottom align-items-center"
-          toggle={toggleCreateModal}
-        >
+        <ModalHeader className="" toggle={toggleCreateModal}>
           Create Event
         </ModalHeader>
         <ModalBody>
@@ -237,29 +234,29 @@ function App() {
             onFormSubmit={handleNewEvent}
           />
         </ModalBody>
+
+        <ModalFooter>
+          <Button form="eventDetailsForm">Create</Button>
+        </ModalFooter>
       </Modal>
 
       <Modal isOpen={editModal} toggle={toggleEditModal} centered>
-        <ModalHeader
-          className="border-bottom"
-          toggle={toggleEditModal}
-          tag={"div"}
-          cssModule={{
-            "modal-title":
-              "d-flex flex-fill justify-content-between align-items-center",
-          }}
-        >
-          <h5 className="mb-0">Create Event</h5>
-          <Button color="danger" size="sm" onClick={handleEventDelete}>
-            Delete
-          </Button>
-        </ModalHeader>
+        <ModalHeader toggle={toggleEditModal}>Change Event</ModalHeader>
         <ModalBody>
           <EventDetailsForm
             event={entity as Event}
             onFormSubmit={handleEditEvent}
           />
         </ModalBody>
+
+        <ModalFooter>
+          <Button onClick={handleEventDelete} color="danger">
+            Delete
+          </Button>
+          <Button form="eventDetailsForm" color="primary">
+            Save
+          </Button>
+        </ModalFooter>
       </Modal>
     </Container>
   );

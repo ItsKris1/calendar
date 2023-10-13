@@ -44,12 +44,13 @@ export const EventDetailsForm = ({ event, onFormSubmit }: Props) => {
   };
 
   return (
-    <Form onSubmit={handleSubmit}>
+    <Form onSubmit={handleSubmit} id="eventDetailsForm">
       <FormGroup>
         <Label for="title">Title</Label>
         <Input
           type="text"
           id="title"
+          placeholder="Title"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
         ></Input>
@@ -82,8 +83,6 @@ export const EventDetailsForm = ({ event, onFormSubmit }: Props) => {
           <option value="class_event">Class event</option>
         </Input>
       </FormGroup>
-
-      <Button>Create</Button>
     </Form>
   );
 };
