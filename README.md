@@ -1,6 +1,11 @@
 # Calendar
 
-Calendar is a web application with persistent data where you can create, delete, view and update calendar events. You can update the event by clicking on it and if you wish to delete an event you can do so again by clicking on it and clicking the delete button.
+Calendar is a web application, where you can create, delete, view and update calendar events. 
+
+### Events
+Events have title, date and type associated to them. 
+Types are predefined and each type has a different color to it. Events are displayed with the type color and name on the calendar.
+By clicking on an event a modal will be opened, where you can update or delete the event.
 
 ## Running the program
 
