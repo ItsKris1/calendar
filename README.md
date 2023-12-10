@@ -23,6 +23,16 @@ By clicking on an event a modal will be opened, where you can update or delete t
 
 If the commands ran haven't opened the app in the browser go to https://localhost:3000
 
+## Images
+Main page
+
+![image](https://github.com/ItsKris1/calendar/assets/69897943/cdad46f4-1ca3-4081-9a88-6c9a084b4129)
+
+Example of modal, which is shown when you want to create, delete or change an event.
+
+![image](https://github.com/ItsKris1/calendar/assets/69897943/e94f4f06-bcf4-4a53-98a2-ad22e711c331)
+
+
 ## Technologies
 
 UI
